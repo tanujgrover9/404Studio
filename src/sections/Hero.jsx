@@ -6,9 +6,8 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-end min-h-screen overflow-hidden "
+      className="relative flex flex-col justify-end min-h-screen overflow-hidden"
     >
-      {/* 🎥 Futuristic Video Background */}
       <video
         autoPlay
         loop
@@ -18,39 +17,45 @@ const Hero = () => {
         src="/assets/856857-uhd_4096_2160_30fps.mp4"
       ></video>
 
-<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff233_0%,transparent_60%),radial-gradient(circle_at_70%_60%,#ff007744_0%,transparent_60%)] mix-blend-screen z-[-40]" />
+      {/* 🌈 Softer background gradients */}
+      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff233_0%,transparent_60%),radial-gradient(circle_at_70%_60%,#ff007744_0%,transparent_60%)] mix-blend-screen z-[-40]" />
 
-      {/* <div className="absolute inset-0 overflow-hidden z-[-30] opacity-[0.15] pointer-events-none">
-        <div className="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,transparent_95%,#00f9ff_95%),linear-gradient(0deg,transparent_95%,#ff00ff_95%)] bg-[length:40px_40px] animate-gridMove"></div>
-      </div> */}
-
-      {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent z-[-20]" /> */}
-
-      <div className="relative z-10 text-white px-6 sm:px-12 md:px-20 text-center md:text-left select-none">
+      {/* 🧠 Content */}
+      <div className="relative z-10 text-white px-6 sm:px-12 md:px-20 text-center md:text-left select-none pb-24 sm:pb-28 md:pb-32 lg:pb-36">
         <div className="max-w-5xl mx-auto">
           {/* Subtitle */}
-          <p className="text-sm sm:text-base uppercase tracking-[0.3em] text-white/60 mb-5">
-            No Bugs Found
+          <p className="relative inline-block px-5 py-2 text-base sm:text-lg md:text-xl font-medium uppercase tracking-[0.15em] text-white/90 rounded-xl mb-6 backdrop-blur-md bg-black/30 border border-white/10 shadow-[0_0_20px_rgba(0,255,242,0.15)]">
+            <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-400 text-transparent bg-clip-text animate-pulse-slow drop-shadow-[0_0_8px_rgba(0,255,242,0.4)]">
+              No Bugs Found
+            </span>
           </p>
 
           {/* Title */}
           <h1
-            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[9rem] sm:text-[6rem] md:text-[14rem] lg:text-[14rem] xl:text-[16rem]"
+            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[7rem] sm:text-[6rem] md:text-[10rem] lg:text-[12rem] xl:text-[13rem]"
             id="glitch-title"
           >
             <span className="glitch-text relative inline-block drop-shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:scale-[1.02]">
               404
             </span>{" "}
-            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-red-600 via-blue-600 to-fuchsia-600 animate-shimmer">
+            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-red-600 via-blue-600 to-yellow-600 animate-shimmer">
               Studio
             </span>
           </h1>
 
           {/* Description */}
-          <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
-            I help growing brands and startups gain an unfair advantage through
-            premium, results-driven websites and web apps.
-          </p>
+         <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
+  I craft digital experiences that feel alive.<br />
+  Every pixel, motion, and line of code has intent.<br />
+  Your brand deserves more than a template — it needs a story.<br />
+  I blend design, interactivity, and emotion into one.<br />
+  The result? A website that actually{" "}
+  <span className="relative font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-blue-300 to-violet-100 drop-shadow-[0_0_10px_rgba(0,255,242,0.4)] animate-glow-text">
+    [moves people]
+  </span>.
+</p>
+
+
 
           {/* Signature */}
           <p className="mt-10 text-white/60 italic tracking-wide text-sm">
@@ -59,9 +64,18 @@ const Hero = () => {
         </div>
       </div>
 
-      {/* ✨ Style Section */}
+      {/* 🔽 Scroll Down Indicator */}
+      <div className="absolute bottom-6 sm:bottom-10 md:bottom-14 left-1/2 -translate-x-1/2 z-20 flex flex-col items-center gap-2 cursor-pointer select-none group">
+        <div className="text-white/70 text-xs sm:text-sm uppercase tracking-[0.3em] group-hover:text-white transition-colors">
+          Scroll Down
+        </div>
+        <div className="w-[22px] h-[36px] sm:w-[26px] sm:h-[44px] md:w-[30px] md:h-[50px] border-2 border-white/50 rounded-full flex justify-center items-start overflow-hidden relative group-hover:border-white transition-all duration-300">
+          <span className="absolute top-2 w-[6px] h-[6px] bg-white rounded-full animate-scrollDot"></span>
+        </div>
+      </div>
+
+      {/* ✨ Styles */}
       <style>{`
-        /* ⚡ Glitch effect */
         .glitch-text {
           position: relative;
           color: #fff;
@@ -109,7 +123,6 @@ const Hero = () => {
           100% { clip: rect(20px, 9999px, 80px, 0); transform: skew(0.2deg); }
         }
 
-        /* ✨ Shimmer on "Studio" */
         @keyframes shimmer {
           0% { background-position: -200% center; }
           100% { background-position: 200% center; }
@@ -119,7 +132,6 @@ const Hero = () => {
           animation: shimmer 3s linear infinite;
         }
 
-        /* 🌠 Subtle flicker effect for title */
         @keyframes subtle-flicker {
           0%, 100% { opacity: 1; filter: brightness(1); }
           50% { opacity: 0.95; filter: brightness(1.15); }
@@ -128,14 +140,37 @@ const Hero = () => {
           animation: subtle-flicker 8s infinite ease-in-out;
         }
 
-        /* 🕹️ Moving neon grid background */
-        @keyframes gridMove {
-          0% { background-position: 0 0; }
-          100% { background-position: 40px 40px; }
+        @keyframes scrollDot {
+          0% { transform: translateY(0); opacity: 1; }
+          70% { transform: translateY(16px); opacity: 0; }
+          100% { transform: translateY(0); opacity: 1; }
         }
-        .animate-gridMove {
-          animation: gridMove 12s linear infinite;
+        .animate-scrollDot {
+          animation: scrollDot 1.8s infinite ease-in-out;
         }
+
+        @keyframes pulse-slow {
+          0%, 100% { opacity: 1; filter: brightness(1); }
+          50% { opacity: 0.85; filter: brightness(1.3); }
+        }
+        .animate-pulse-slow {
+          animation: pulse-slow 3s ease-in-out infinite;
+        }
+          @keyframes glow-text {
+  0%, 100% {
+    filter: drop-shadow(0 0 6px rgba(0, 255, 242, 0.4))
+            drop-shadow(0 0 12px rgba(255, 0, 255, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 12px rgba(0, 255, 242, 0.6))
+            drop-shadow(0 0 20px rgba(255, 0, 255, 0.4));
+  }
+}
+
+.animate-glow-text {
+  animation: glow-text 3s ease-in-out infinite;
+}
+
       `}</style>
     </section>
   );
