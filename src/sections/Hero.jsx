@@ -15,16 +15,16 @@ const Hero = () => {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover -z-50 opacity-100"
-        src="/assets/189164-884987248_small.mp4"
+        src="/assets/856857-uhd_4096_2160_30fps.mp4"
       ></video>
 
-      {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff29d_0%,transparent_50%),radial-gradient(circle_at_70%_60%,#ff0077a1_0%,transparent_50%)] mix-blend-screen z-[-40]" /> */}
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff233_0%,transparent_60%),radial-gradient(circle_at_70%_60%,#ff007744_0%,transparent_60%)] mix-blend-screen z-[-40]" />
 
       {/* <div className="absolute inset-0 overflow-hidden z-[-30] opacity-[0.15] pointer-events-none">
         <div className="absolute inset-0 w-full h-full bg-[linear-gradient(90deg,transparent_95%,#00f9ff_95%),linear-gradient(0deg,transparent_95%,#ff00ff_95%)] bg-[length:40px_40px] animate-gridMove"></div>
       </div> */}
 
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent z-[-20]" />
+      {/* <div className="absolute inset-0 bg-gradient-to-t from-black via-black/10 to-transparent z-[-20]" /> */}
 
       <div className="relative z-10 text-white px-6 sm:px-12 md:px-20 text-center md:text-left select-none">
         <div className="max-w-5xl mx-auto">
@@ -35,13 +35,13 @@ const Hero = () => {
 
           {/* Title */}
           <h1
-            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[4rem] sm:text-[6rem] md:text-[9rem] lg:text-[11rem] xl:text-[13rem]"
+            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[4rem] sm:text-[6rem] md:text-[12rem] lg:text-[12rem] xl:text-[16rem]"
             id="glitch-title"
           >
             <span className="glitch-text relative inline-block drop-shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:scale-[1.02]">
               404
             </span>{" "}
-            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-fuchsia-400 animate-shimmer">
+            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-red-600 via-blue-600 to-fuchsia-600 animate-shimmer">
               Studio
             </span>
           </h1>
