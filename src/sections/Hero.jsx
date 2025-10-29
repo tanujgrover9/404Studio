@@ -35,7 +35,7 @@ const Hero = () => {
 
           {/* Title */}
           <h1
-            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[4rem] sm:text-[6rem] md:text-[12rem] lg:text-[12rem] xl:text-[16rem]"
+            className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[9rem] sm:text-[6rem] md:text-[14rem] lg:text-[14rem] xl:text-[16rem]"
             id="glitch-title"
           >
             <span className="glitch-text relative inline-block drop-shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:scale-[1.02]">
