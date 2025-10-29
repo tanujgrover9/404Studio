@@ -15,7 +15,7 @@ const Hero = () => {
         muted
         playsInline
         className="absolute inset-0 w-full h-full object-cover -z-50 opacity-100"
-        src="/public/assets/189164-884987248_small.mp4"
+        src="/assets/189164-884987248_small.mp4"
       ></video>
 
       {/* <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff29d_0%,transparent_50%),radial-gradient(circle_at_70%_60%,#ff0077a1_0%,transparent_50%)] mix-blend-screen z-[-40]" /> */}
