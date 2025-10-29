@@ -41,7 +41,7 @@ const Hero = () => {
             <span className="glitch-text relative inline-block drop-shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:scale-[1.02]">
               404
             </span>{" "}
-            <span className="font-light text-white/70 bg-clip-text text-transparent bg-gradient-to-r from-white via-cyan-200 to-fuchsia-400 animate-shimmer">
+            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-white via-cyan-200 to-fuchsia-400 animate-shimmer">
               Studio
             </span>
           </h1>
