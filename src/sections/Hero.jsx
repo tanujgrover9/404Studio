@@ -44,16 +44,10 @@ const Hero = () => {
           </h1>
 
           {/* Description */}
-         <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
-  I craft digital experiences that feel alive.<br />
-  Every pixel, motion, and line of code has intent.<br />
-  Your brand deserves more than a template — it needs a story.<br />
-  I blend design, interactivity, and emotion into one.<br />
-  The result? A website that actually{" "}
-  <span className="relative font-semibold text-transparent bg-clip-text bg-gradient-to-r from-pink-300 via-blue-300 to-violet-100 drop-shadow-[0_0_10px_rgba(0,255,242,0.4)] animate-glow-text">
-    [moves people]
-  </span>.
+       <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
+  I craft next-gen web experiences where design meets performance — blending creativity, motion, and code to help brands lead in the digital age.
 </p>
+
 
 
 
