@@ -60,7 +60,6 @@
   font-display: swap;
 }
 
-/* Amiamie-Round Variants (if needed separately) */
 @font-face {
   font-family: "Amiamie-Round";
   src: url("/fonts/otf/Amiamie-RegularRound.otf") format("opentype"),

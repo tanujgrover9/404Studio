@@ -9,6 +9,7 @@ import Works from "./sections/Works";
 import ContactSummary from "./sections/ContactSummary";
 import Contact from "./sections/Contact";
 import { useProgress } from "@react-three/drei";
+import ContactUs from "./sections/ContactUs";
 
 const App = () => {
   const { progress } = useProgress();
@@ -21,7 +22,7 @@ const App = () => {
   }, [progress]);
 
   return (
-    <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto">
+    <ReactLenis root className="relative w-screen min-h-screen overflow-x-auto ">
       {!isReady && (
         <div className="fixed inset-0 z-[999] flex flex-col items-center justify-center bg-black text-white transition-opacity duration-700 font-light">
           <p className="mb-4 text-xl tracking-widest animate-pulse">
@@ -39,6 +40,7 @@ const App = () => {
         className={`${
           isReady ? "opacity-100" : "opacity-0"
         } transition-opacity duration-1000`}
+        
       >
         <Navbar />
         <Hero />
@@ -47,6 +49,7 @@ const App = () => {
         <About />
         <Works />
         <ContactSummary />
+        <ContactUs/>
         <Contact />
       </div>
     </ReactLenis>

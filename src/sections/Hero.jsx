@@ -6,30 +6,17 @@ const Hero = () => {
   return (
     <section
       id="home"
-      className="relative flex flex-col justify-end min-h-screen overflow-hidden"
+      className="relative flex flex-col justify-end min-h-screen overflow-hidden bg-black z-1 "
     >
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover -z-50 opacity-100"
-        src="/assets/856857-uhd_4096_2160_30fps.mp4"
-      ></video>
-
-      {/* 🌈 Softer background gradients */}
-      <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_50%,#00fff233_0%,transparent_60%),radial-gradient(circle_at_70%_60%,#ff007744_0%,transparent_60%)] mix-blend-screen z-[-40]" />
-
+      <img
+        src="../../public/assets/hero-bg-Picsart-AiImageEnhancer.webp"
+        alt="Background"
+        className="absolute inset-0 w-full h-full object-cover -z-50 opacity-100 bg-black "
+      />
+      
       {/* 🧠 Content */}
       <div className="relative z-10 text-white px-6 sm:px-12 md:px-20 text-center md:text-left select-none pb-24 sm:pb-28 md:pb-32 lg:pb-36">
         <div className="max-w-5xl mx-auto">
-          {/* Subtitle */}
-          <p className="relative inline-block px-5 py-2 text-base sm:text-lg md:text-xl font-medium uppercase tracking-[0.15em] text-white/90 rounded-xl mb-6 backdrop-blur-md bg-black/30 border border-white/10 shadow-[0_0_20px_rgba(0,255,242,0.15)]">
-            <span className="bg-gradient-to-r from-cyan-300 via-blue-400 to-fuchsia-400 text-transparent bg-clip-text animate-pulse-slow drop-shadow-[0_0_8px_rgba(0,255,242,0.4)]">
-              No Bugs Found
-            </span>
-          </p>
-
           {/* Title */}
           <h1
             className="relative font-extrabold tracking-tight leading-[0.9] text-white text-[7rem] sm:text-[6rem] md:text-[10rem] lg:text-[12rem] xl:text-[13rem]"
@@ -38,18 +25,17 @@ const Hero = () => {
             <span className="glitch-text relative inline-block drop-shadow-[0_4px_15px_rgba(0,0,0,0.3)] cursor-pointer transition-all duration-300 hover:scale-[1.02]">
               404
             </span>{" "}
-            <span className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-red-600 via-blue-600 to-yellow-600 animate-shimmer">
+            <div className="font-light text-white/70 bg-clip-text bg-gradient-to-r from-red-600 via-blue-600 to-yellow-600 animate-shimmer">
               Studio
-            </span>
+            </div>
           </h1>
 
           {/* Description */}
-       <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
-  I craft next-gen web experiences where design meets performance — blending creativity, motion, and code to help brands lead in the digital age.
-</p>
-
-
-
+          <p className="mt-8 text-base sm:text-lg md:text-xl leading-relaxed text-white/85 max-w-2xl mx-auto md:mx-0">
+            I craft next-gen web experiences where design meets performance —
+            blending creativity, motion, and code to help brands lead in the
+            digital age.
+          </p>
 
           {/* Signature */}
           <p className="mt-10 text-white/60 italic tracking-wide text-sm">
