@@ -9,7 +9,7 @@ const Hero = () => {
       className="relative flex flex-col justify-end min-h-screen overflow-hidden bg-black z-1 "
     >
       <img
-        src="../../public/assets/hero-bg-Picsart-AiImageEnhancer.webp"
+        src="/assets/hero-bg-Picsart-AiImageEnhancer.webp"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover -z-50 opacity-100 bg-black "
       />
