@@ -51,7 +51,7 @@ When I’m not lost in a layout:
      <div className="flex flex-col items-center justify-between gap-16 px-10 pb-16 text-xl font-light tracking-wide lg:flex-row md:text-2xl lg:text-3xl text-white/60">
   <video
     ref={imgRef}
-    src="/public/assets/Recording 2025-10-29 093357.mp4" 
+    src="/assets/Recording 2025-10-29 093357.mp4" 
     className="w-md rounded-3xl object-cover shadow-lg"
     autoPlay
     loop
