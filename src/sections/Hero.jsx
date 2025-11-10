@@ -17,7 +17,7 @@ const Hero = () => {
 
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent z-0"></div>
 
-      <div className="absolute left-5 top-130 -translate-y-1/2 z-20">
+      <div className="absolute left-5 top-115 -translate-y-1/2 z-20">
         <button
           onClick={() => {
             const section = document.getElementById("contact");
