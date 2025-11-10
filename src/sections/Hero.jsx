@@ -10,7 +10,7 @@ const Hero = () => {
       className="relative flex flex-col justify-end min-h-screen overflow-hidden bg-black z-1"
     >
       <img
-        src="../../public/assets/backgrounds/pexels-bruthethe-1910225.jpg"
+        src="/assets/backgrounds/pexels-bruthethe-1910225.jpg"
         alt="Background"
         className="absolute inset-0 w-full h-full object-cover -z-50 opacity-90"
       />
