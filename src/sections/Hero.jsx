@@ -91,7 +91,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="absolute right-[-20px] bottom-[-160] rotate-90 text-gray-400 text-sm tracking-widest">
+        <div className="absolute right-0 bottom-[-160] rotate-90 text-gray-400 text-sm tracking-widest">
           Scroll Down →
         </div>
       </div>
